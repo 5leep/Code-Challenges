@@ -4,22 +4,36 @@ public class profitCalculator
 {
     public static void main ( String[] args )
     {
-        Scanner scan = new Scanner ( System.in );  // Create a Scanner object
+        Scanner scan = new Scanner ( System.in );
         Double saleValue, productValue, profitValue;
 
-        System.out.println ( "\n\n\n<EV> \"Hello, Sir. Please provide me the value of the sale. ;)\" \n\n\n" );
-        saleValue = scan.nextDouble();
-        System.out.println ( "\n\n<EV> \"So " + saleValue + " is the sale value? What was the cost of the product to buy in?\" \n\n\n");
-        productValue = scan.nextDouble();
-        saleValue -- productValue = profitValue;
-        if ( profitValue >= 0 )
-        {
-            System.out.println ( "\n\n<EV> \"So we lost money?! D:\"");
-        }
-        else ( profitValue > 0 )
-        {
+        System.out.println ( "\n\n\n\n<EV> \"Hello, Sir. Please provide me the value of the sale. ;)\" \n\n" );
 
-            System.out.println ( "\n\n<EV> \"Amazing! Our total profit was\"");
+        saleValue = scan.nextDouble();
+        
+        System.out.println ( "\n<EV> \"So " + saleValue + " is the sale value? What was the cost of the product to buy in?\" \n\n");
+
+        productValue = scan.nextDouble();
+        profitValue = saleValue - productValue;
+
+        if ( profitValue < 0 )
+        {
+            String.format("%.2f", saleValue );
+            System.out.println ( "\n<EV> \"So we lost money?! D:\" \n\n");
+        }
+        else if ( profitValue > 0 )
+        {
+            String.format("%.2f", saleValue );
+            System.out.println ( "\n<EV> \"Amazing! Our total profit was" + profitValue + "\" \n\n");
+        }
+        else if ( profitValue == 0 )
+        {
+            String.format("%.2f", saleValue );
+            System.out.println ( "\n<EV> \"Amazing! Our total profit was...\"\n<EV> \"Um...\" \n<EV>\"Nothing!\" \n\n");
+        }
+        else
+        {
+            System.out.println ( "\n<EV> \"I've no idea what's happened...\" \n\n");
         }
     }
 }
