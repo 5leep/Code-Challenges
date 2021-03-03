@@ -1,0 +1,13 @@
+03 03 21 plan
+
+EV asks for the value of sale
+
+User inputs the sale value as a double value
+
+EV repeats the double value
+EV asks for the cost of the product
+
+User inputs cost of the product as a double value
+
+EV repeats double value
+EV says "The profit from this sale was [profit]"+ as a double value
