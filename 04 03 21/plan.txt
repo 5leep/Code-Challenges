@@ -1,0 +1,16 @@
+You play against EV
+
+Press P to play and you kick the ball
+
+loop
+{
+Chance for EV to...
+return
+miss
+concede (goal)
+
+if return, you will...
+return
+miss
+concede (lose)
+}
