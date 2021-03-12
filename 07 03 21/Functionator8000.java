@@ -11,6 +11,7 @@ public class Functionator8000
 
         hehe = scan.nextLine();
         
+        
         System.out.println("\n\n<EV> \"Allow me to introduce...\"");
         System.out.println("\n\n<EV> \"The " + hehe + "inator.\"\n\n\n");
     }
